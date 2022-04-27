@@ -20,7 +20,7 @@ const useCart = () => {
         })
             .then(res => res.json())
             .then(products => {
-                console.log(products);
+                // console.log(products);
                 for (const id in storedCart) {
                     const addedProduct = products.find(product => product._id === id);
                     if (addedProduct) {

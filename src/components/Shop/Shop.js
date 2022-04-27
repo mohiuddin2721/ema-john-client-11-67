@@ -7,7 +7,7 @@ import Product from '../Product/Product';
 import './Shop.css';
 
 const Shop = () => {
-    
+
     const [cart, setCart] = useCart();
     const [pageCount, setPageCount] = useState(0);
     const [page, setPage] = useState(0);
@@ -31,7 +31,7 @@ const Shop = () => {
     }, [])
 
     const handleAddToCart = (selectedProduct) => {
-        console.log(selectedProduct);
+        // console.log(selectedProduct);
         let newCart = [];
         const exists = cart.find(product => product._id === selectedProduct._id);
         if (!exists) {
